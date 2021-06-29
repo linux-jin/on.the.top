@@ -1,0 +1,57 @@
+*{
+  font-family: "Helvetica Neue", "Luxi Sans", "Segoe UI", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Logo";
+}
+
+div {
+  caret-color: rgba(0, 0, 0, 0)
+}
+
+.imgBg{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s, transform .25s, filter .25s;
+  transition-property: opacity, transform, filter;
+  transition-duration: 1s, 0.25s, 0.25s;
+  transition-timing-function: ease, ease, ease;
+  transition-delay: 0s, 0s, 0s;
+  backface-visibility: hidden;
+  object-fit: cover;
+}
+
+.footer {
+  cursor: pointer;
+  position: fixed;
+  left: 50%;
+  bottom: 3%;
+  text-align: center;
+  transform: translateX(-50%);
+  font-size: 14px;
+  margin-left: 1%;
+  color: rgba(255,255,255,.55);
+  backdrop-filter: blur(10px);
+  border-radius: 6px;
+  padding: 2px 8px;
+}
+
+.author {
+  position: absolute;
+  left: 1%;
+  top: 1%;
+  font-size: 14px;
+  text-align: left;
+  color: #f3f3f3;
+  cursor: pointer;
+}
+
+
+.img-filter{
+  filter: blur(10px);
+}
+
+
+
+

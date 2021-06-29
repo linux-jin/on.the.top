@@ -1,0 +1,36 @@
+.feedContainer {
+  cursor: pointer;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  width: 0%;
+  height: 100%;
+  outline: none;
+  box-shadow: rgb(0 0 0 / 10%) 0 0 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  transition: all 0.6s;
+}
+
+.feedMsg {
+  margin-bottom: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
+.feedContainer::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.feedMsg::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.feedBox::-webkit-scrollbar {
+  width: 0 !important;
+}

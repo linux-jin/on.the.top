@@ -1,0 +1,48 @@
+.searchBar input{
+    position: fixed;
+    top:200px;
+    left: 50%;
+    width: 300px;
+    transform: translateX(-50%);
+    border: none;
+    color: #f3f3f3;
+    outline: none;
+    border-radius: 25px;
+    padding: 10px 12px;
+    text-align: center;
+    box-shadow: rgb(0 0 0 / 20%) 0 0 10px;
+    background-color: rgba(255,255,255,.25);
+    backdrop-filter: blur(10px);
+    transition: color 0.25s, background-color 0.25s, box-shadow 0.25s, left 0.25s, opacity 0.25s, top 0.25s, width 0.25s;
+  }
+  
+  .searchBar input::placeholder{
+    color: #f3f3f3;
+  }
+  
+  .searchBar input:focus {
+    color: #f3f3f3;
+    background-color: rgba(0,0,0,.22);
+    box-shadow: rgb(0 0 0 / 20%) 0 0 10px;
+    transition: color 0.25s, background-color 0.25s, box-shadow 0.25s, left 0.25s, opacity 0.25s, top 0.25s, width 0.25s;
+    backdrop-filter: blur(10px);
+    width: 600px;
+  }
+  
+  .searchBar input:hover {
+    color: #f3f3f3;
+    background-color: rgba(0, 0, 0, .22);
+    transition: color 0.25s, background-color 0.25s, box-shadow 0.25s, left 0.25s, opacity 0.25s, top 0.25s, width 0.25s;
+    box-shadow: rgb(0 0 0 / 20%) 0 0 10px;
+    width: 600px;
+    backdrop-filter: blur(10px);
+  }
+  
+  .searchBar.foucs input{
+    color: #f3f3f3;
+    background-color: rgba(0, 0, 0, .22);
+    transition: color 0.25s, background-color 0.25s, box-shadow 0.25s, left 0.25s, opacity 0.25s, top 0.25s, width 0.25s;
+    box-shadow: rgb(0 0 0 / 20%) 0 0 10px;
+    width: 600px;
+    backdrop-filter: blur(10px);
+  }

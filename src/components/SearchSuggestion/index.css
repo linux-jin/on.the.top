@@ -1,0 +1,38 @@
+.resultBox {
+  margin-top: 10px;
+  position: fixed;
+  top: 250px;
+  left: 50%;
+  width: 620px;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.85);
+  border-top: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 20%) 0 0 10px;
+  background-color: rgba(253, 253, 253, 0.15);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  transition: color 0.25s, background-color 0.25s, box-shadow 0.25s, left 0.25s, opacity 0.25s, top 0.25s, width 0.25s;
+  cursor: pointer;
+  overflow: auto;
+}
+
+.resultBox div {
+  transition: 0.25s;
+  padding: 8px 2em;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  transition: 0.25s rgba(255, 255, 255, 0.15);
+  overflow: auto;
+}
+
+.resultBox div:hover {
+  padding: 8px 2em;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  text-indent: 0.5em;
+  background-color: rgba(255, 255, 255, 0.15);
+  overflow: auto;
+}

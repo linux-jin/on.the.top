@@ -1,0 +1,25 @@
+.FeedItem {
+    display: flex;
+    padding: 8px 15px;
+    transition: all .05s;
+  }
+  
+  .FeedItem .title {
+    color: rgba(255,255,255,.80);
+    font-size: medium;
+    border-bottom-color: rgba(255,255,255,.20);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+  }
+
+  .FeedItem:hover {
+    text-indent: 0.5em;
+  }
+  
+  .icon img {
+    padding-right: 10px;
+    width: 23px;
+    height: 23px;
+    border-radius: 5px;
+    align-items: center
+  }

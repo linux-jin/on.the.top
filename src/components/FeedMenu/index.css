@@ -1,0 +1,53 @@
+.feedMenu {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    width: 20%;
+    height: 100vh;
+    transform: translateX(50%) translateY(25%);
+  }
+  .appItem {
+    display: flex;
+    width: 100px;
+    padding-top: 3px;
+    margin-top: 10px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+    border-radius: 10px;
+    align-content: center;
+  }
+  .appItem:hover, .active {
+    background-color: rgba(255,255,255, .28);
+    box-shadow: rgb(0 0 0 / 10%) 0 0 10px;
+  }
+
+  
+  .appItem .title {
+    color: rgba(255,255,255, .9);
+    font-size: medium;
+    border-bottom-color: rgba(255,255,255,.20);
+  }
+  
+  .svgBackBox {
+    transform: translateX(100%);
+    backdrop-filter: blur(10px);
+    width: 26px;
+    border-radius: 20px;
+    padding: 5px 4px;  
+  }
+  
+  .svgBackBox:hover{
+    backdrop-filter: blur(10px);
+    background-color: rgba(255,255,255, .10);
+  }
+
+  .svgBack {
+    height: 24px;
+    width: 24px;
+    vertical-align:text-bottom;
+    text-align:center;
+    fill:currentColor;
+    color: white;
+  }

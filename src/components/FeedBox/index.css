@@ -1,0 +1,9 @@
+.feedBox {
+    overflow: auto;
+    width: 80%;
+    margin: 30px 50px;
+    background-color: rgb(222 206 206 / 12%);
+    border-radius: 15px;
+    box-shadow: rgb(0 0 0 / 10%) 0 0 10px;
+  }
+  
