@@ -1,0 +1,33 @@
+.MenuBar {
+    cursor: pointer;
+    display: flex;
+    position: fixed;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: color 0.25s, background-color 0.25s, box-shadow 0.25s, left 0.25s, opacity 0.25s, top 0.25s, width 0.25s;
+}
+
+.svgMenu {
+    margin: 0px 15px;
+    width: 26px;
+    border: none;
+    color: #f3f3f3;
+    outline: none;
+    line-height: 0px;
+    border-radius: 20px;
+    padding: 5px 3px;
+    padding-left: 5px;
+    box-shadow: rgb(0 0 0 / 20%) 0 0 10px;
+    background-color: rgba(255,255,255,.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: saturate(180%) blur(10px);
+}
+
+.svgMenu:hover{
+    background-color: rgba(255,255,255,.3);
+}
+
+.svgRight img {
+    width: 24px;
+}

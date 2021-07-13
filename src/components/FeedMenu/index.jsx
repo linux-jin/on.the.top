@@ -33,9 +33,9 @@ function AppBox(props) {
 }
 
 function SvgBack(props) {
-  const handleBack=()=>{
-    props.isOn({search:1, foot:1, feed:0});
-  }
+  const handleBack = () => {
+    props.isOn({ search: 1, foot: 1, feed: 0, menu: 1 });
+  };
   return (
     <div className="svgBackBox" onClick={handleBack}>
       <svg viewBox="0 0 24 24" aria-hidden="true" className="svgBack">

@@ -26,14 +26,14 @@ export default function SearchBar(props) {
   const handleSearch = (r) => {
     let userInputValue = refInput.current.value;
     if (userInputValue) {
-      props.isOn({bgFlur: 1});
+      props.isOn({bgFlur: 1, menu: 0});
       getQuerySuggestion(userInputValue);
     }
   };
 
   // 当用户放在输入框时，开始改变背景虚化样式
   const handleFocus = () => {
-    props.isOn({bgFlur: 1});
+    props.isOn({bgFlur: 1, menu: 0});
   };
 
   // 处理输入框 失去焦点
@@ -41,10 +41,10 @@ export default function SearchBar(props) {
      // 输入框内仍有内容，背景虚化，隐藏Footer
     if (refInput.current.value) {
       setClassBarName("searchBar foucs");
-      props.isOn({bgFlur: 1});
+      props.isOn({bgFlur: 1, menu: 0});
     } else {
       setClassBarName("searchBar");
-      props.isOn({bgFlur: 0});
+      props.isOn({bgFlur: 0, menu: 1});
       props.setState({dataSuggestion: []});
     }
   };

@@ -8,19 +8,20 @@ export default function FeedMain(props) {
     let param = { act: "getNodeLists", ispage: 1, limit: 30, nameArray: [node], page: 1, style: "txt" };
     // Default options are marked with *
     return fetch(url, {
-      body: JSON.stringify(param), // must match 'Content-Type' header
-      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: "same-origin", // include, same-origin, *omit
+      body: JSON.stringify(param), 
+      cache: "no-cache", 
+      credentials: "same-origin", 
       headers: {
-        "user-agent": "Mozilla/4.0 MDN Example",
+        "user-agent": "THE.TOP 3.0",
         "content-type": "application/json",
       },
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, cors, *same-origin
-      redirect: "follow", // manual, *follow, error
-      referrer: "no-referrer", // *client, no-referrer
-    }).then((response) => response.json()); // parses response to JSON
+      redirect: "follow", 
+      referrer: "no-referrer", 
+    }).then((response) => response.json()); 
   }
+  
   const [hotData, setHotData] = useState([]);
   useEffect(() => {
     //let nodeList = ["weibo", "baidu_ssrd", "zhihu_total"];
