@@ -5,7 +5,8 @@ import "./index.css"
 function SuggestionItem(props) {
   const myref = useRef();
   const handleClick = useCallback(() => {
-    window.open(`https://www.bing.com/search?q=${myref.current.outerText}`);
+    let localEngine = localStorage.getItem('searchEngine');
+    window.open(`${localEngine}${myref.current.outerText}`);
   }, []);
   const { title } = props;
   return (

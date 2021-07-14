@@ -10,24 +10,29 @@
 
 .svgMenu {
     margin: 0px 15px;
-    width: 26px;
-    border: none;
     color: #f3f3f3;
     outline: none;
     line-height: 0px;
     border-radius: 20px;
-    padding: 5px 3px;
-    padding-left: 5px;
+    width: 26px;
+    border-radius: 20px;
+    padding: 5px 5px;
     box-shadow: rgb(0 0 0 / 20%) 0 0 10px;
     background-color: rgba(255,255,255,.1);
     -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: saturate(180%) blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 .svgMenu:hover{
     background-color: rgba(255,255,255,.3);
 }
 
-.svgRight img {
-    width: 24px;
+.svgNews {
+    fill: currentColor;
+    color: #f3f3f3;
+}
+
+.svgSetting{
+    fill: currentColor;
+    color: #f3f3f3;
 }

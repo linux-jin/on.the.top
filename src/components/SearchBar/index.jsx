@@ -53,7 +53,8 @@ export default function SearchBar(props) {
     let val = refInput.current.value;
     // 当用户按下Enter键
     if (e.keyCode === 13 && val) {
-      window.open(`https://www.bing.com/search?q=${val}`);
+      let localEngine = localStorage.getItem('searchEngine');
+      window.open(`${localEngine}${val}`);
     }
   };
 

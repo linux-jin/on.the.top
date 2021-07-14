@@ -1,0 +1,95 @@
+.ToolBar {
+  cursor: pointer;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  outline: none;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: rgb(0 0 0 / 10%) 0 0 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  transition: all 0.6s;
+}
+
+.ios-btn {
+  border-radius: 25px;
+  width: 50px;
+  height: 24px;
+  /*
+  background-color: #5eb662;
+  */
+  background-color: #e9e9ef;
+}
+
+.ios-switch {
+  position: relative;
+  appearance: none;
+  cursor: pointer;
+  transition: all 100ms;
+}
+
+.ios-switch::before{
+  position: absolute;
+  content: "";
+  transition: all .25s cubic-bezier(.45, 1, .4, 1);
+}
+.ios-switch::after{
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 25px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px rgba(#000, .3);
+  content: "";
+  transition: all .25s cubic-bezier(.4, .4, .25, 1.35);
+}
+
+.ios-switch-checked::before{
+  transform: scale(0);
+}
+
+.ios-switch-checked::after{
+  transform: translateX(26px);
+}
+
+.switch-item{
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom-color: rgba(255,255,255,.30);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.switch-desc {
+  display: flex;
+  padding-left: 12px;
+  width: 100%;
+}
+
+.switch-icon img{
+  border-radius: 6px;
+  width: 24px;
+}
+
+.switch-btn {
+  padding-right: 12px;
+}
+
+.switch-text {
+  font-size: medium;
+  padding: 2px 5px;
+  line-height: 18px;
+  color: rgba(255,255,255,.80);
+}
+
+.switchBox {
+  margin-top: 10px;
+}
