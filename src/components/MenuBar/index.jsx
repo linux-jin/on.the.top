@@ -39,7 +39,6 @@ function SVGSetting(props) {
 }
 export function MenuBar(props) {
     const [isSettingOn, setSettingOn] = useState(false);
-    console.log("#", isSettingOn);
   return (
     <div className="MenuBar" style={props.style}>
       <SVGNews isOn={props.isOn}  setSettingOn={setSettingOn}/>

@@ -92,7 +92,6 @@ class App extends React.Component {
     // 30秒清空一次feed缓存
     this.timerID = setInterval(() => {
       this.state.feedAppList.forEach((item) => {
-        console.log("移除", item.sign);
         localStorage.removeItem(item.sign);
       });
     }, 600000);
@@ -122,7 +121,6 @@ class App extends React.Component {
   };
   // 处理全局按键
   handleGlobalKey = (e) => {
-    console.log(e.keyCode);
     // 右键 显示左栏热榜
     if (e.keyCode === 39) {
       this.isOn({ search: 0, foot: 0, feed: 1, menu: 0 });
@@ -141,7 +139,6 @@ class App extends React.Component {
 
   // 开关控制，参数例如 obj={foot: 1}
   isOn = (obj) => {
-    console.log(obj);
     this.setState({ on: Object.assign({}, this.state.on, obj) });
   };
 
