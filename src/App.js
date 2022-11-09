@@ -50,7 +50,7 @@ class App extends React.Component {
     let isBing = localStorage.getItem("isBing");
     // 判断缓存中图片是否为今日
     if (currDay !== bingDay) {
-      fetch(`https://bing-image-api-rouge.vercel.app/api/new`)
+      fetch(`https://bing.mistyhill.ml/api/new`)
         .then((data) => {
           fileReader(data).then((bImage) => {
             if (isBing==="bing"){
