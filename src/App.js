@@ -51,16 +51,10 @@ class App extends React.Component {
     // 判断缓存中图片是否为今日
     if (currDay !== bingDay) {
       fetch(`https://bing-image-api-rouge.vercel.app/api/new`)
-        .then((res) => {
-          return res.blob();
-        })
         .then((data) => {
           fileReader(data).then((bImage) => {
-            // 获取成功图片后，更新缓存中的图片和日期
-            localStorage.setItem("bingImage", bImage);
-            localStorage.setItem("bingDay", currDay);
             if (isBing==="bing"){
-              this.setState({bgSrc: localStorage.getItem("bingImage")});
+              this.setState({bgSrc: data.url});
             }
           });
         });
