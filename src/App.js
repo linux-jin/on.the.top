@@ -50,25 +50,19 @@ class App extends React.Component {
     let isBing = localStorage.getItem("isBing");
     // 判断缓存中图片是否为今日
     if (currDay !== bingDay) {
-      fetch("https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=zh-CN")
+      fetch(`https://bing-image-api-rouge.vercel.app/api/new`)
         .then((res) => {
-          return res.json();
+          return res.blob();
         })
         .then((data) => {
-          fetch(`https://www.bing.com/${data["images"][0]["url"]}`)
-            .then((res) => {
-              return res.blob();
-            })
-            .then((data) => {
-              fileReader(data).then((bImage) => {
-                // 获取成功图片后，更新缓存中的图片和日期
-                localStorage.setItem("bingImage", bImage);
-                localStorage.setItem("bingDay", currDay);
-                if (isBing==="bing"){
-                  this.setState({bgSrc: localStorage.getItem("bingImage")});
-                }
-              });
-            });
+          fileReader(data).then((bImage) => {
+            // 获取成功图片后，更新缓存中的图片和日期
+            localStorage.setItem("bingImage", bImage);
+            localStorage.setItem("bingDay", currDay);
+            if (isBing==="bing"){
+              this.setState({bgSrc: localStorage.getItem("bingImage")});
+            }
+          });
         });
     // 如果是今日，则直接读取
     }else{
